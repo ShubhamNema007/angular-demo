@@ -1,0 +1,21 @@
+<div class="container mx-auto grid grid-cols-3 gap-5">
+    @for (item of types; track $index){
+    <div class="card border-2 my-5">
+        <h3 class="text-4xl uppercase p-2">
+            angular card
+        </h3>
+        <p class="border-y-2 text-lg p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque obcaecati quam optio ab architecto modi
+            aperiam beatae, velit similique magnam autem ipsum fuga sit inventore voluptatem doloribus culpa!
+            Facilis officia enim, iusto quaerat veniam fugiat itaque saepe quam. Perspiciatis dolore distinctio
+            consectetur saepe aperiam in laborum laudantium quibusdam amet consequuntur?
+        </p>
+        <button
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 mx-1">
+            Read more
+        </button>
+    </div>
+    }@empty{
+    <h1 class="text-4xl">no elements</h1>
+    }
+</div>   
